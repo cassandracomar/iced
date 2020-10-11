@@ -104,7 +104,7 @@ impl<'a, Message> Container<'a, Message> {
     ///
     /// [`Container`]: struct.Container.html
     pub fn align_x(mut self, alignment: Align) -> Self {
-        self.horizontal_alignment = align;
+        self.horizontal_alignment = alignment;
 
         self
     }
@@ -113,7 +113,7 @@ impl<'a, Message> Container<'a, Message> {
     ///
     /// [`Container`]: struct.Container.html
     pub fn align_y(mut self, alignment: Align) -> Self {
-        self.vertical_alignment = align;
+        self.vertical_alignment = alignment;
 
         self
     }
