@@ -99,6 +99,24 @@ impl<'a, Message> Container<'a, Message> {
 
         self
     }
+    
+    /// Aligns the contents in the horizontal axis of the [`Container`].
+    ///
+    /// [`Container`]: struct.Container.html
+    pub fn align_x(mut self, alignment: Align) -> Self {
+        self.horizontal_alignment = align;
+
+        self
+    }
+
+    /// Aligns the contents in the vertical axis of the [`Container`].
+    ///
+    /// [`Container`]: struct.Container.html
+    pub fn align_y(mut self, alignment: Align) -> Self {
+        self.vertical_alignment = align;
+
+        self
+    }
 
     /// Sets the style of the [`Container`].
     ///
